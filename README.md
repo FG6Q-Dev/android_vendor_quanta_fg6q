@@ -1,0 +1,1 @@
+# android_vendor_quanta_fg6q
