@@ -27,20 +27,39 @@ PRODUCT_COPY_FILES := \
     vendor/quanta/fg6q/proprietary/bin/nvcap_test:system/bin/nvcap_test \
     vendor/quanta/fg6q/proprietary/bin/nvcgcserver:system/bin/nvcgcserver \
     vendor/quanta/fg6q/proprietary/bin/nvtest:system/bin/nvtest \
-    vendor/quanta/fg6q/proprietary/bin/power_mode.sh:system/bin/power_mode.sh \
     vendor/quanta/fg6q/proprietary/bin/powerservice:system/bin/powerservice \
     vendor/quanta/fg6q/proprietary/bin/set_hwui_params.sh:system/bin/set_hwui_params.sh \
     vendor/quanta/fg6q/proprietary/bin/test-wvdrmplugin:system/bin/test-wvdrmplugin \
     vendor/quanta/fg6q/proprietary/bin/tf_daemon:system/bin/tf_daemon \
+    vendor/quanta/fg6q/proprietary/bin/usdwatchdog:system/bin/usdwatchdog \
     vendor/quanta/fg6q/proprietary/bin/ussr_setup.sh:system/bin/ussr_setup.sh \
     vendor/quanta/fg6q/proprietary/bin/ussrd:system/bin/ussrd \
-    vendor/quanta/fg6q/proprietary/bin/usdwatchdog:system/bin/usdwatchdog \
+    vendor/quanta/fg6q/proprietary/bin/power_mode.sh:system/bin/power_mode.sh \
     vendor/quanta/fg6q/proprietary/etc/firmware/nvavp_aud_ucode.bin:system/etc/firmware/nvavp_aud_ucode.bin \
     vendor/quanta/fg6q/proprietary/etc/firmware/nvavp_os_0ff00000.bin:system/etc/firmware/nvavp_os_0ff00000.bin \
     vendor/quanta/fg6q/proprietary/etc/firmware/nvavp_os_eff00000.bin:system/etc/firmware/nvavp_os_eff00000.bin \
     vendor/quanta/fg6q/proprietary/etc/firmware/nvavp_vid_ucode_alt.bin:system/etc/firmware/nvavp_vid_ucode_alt.bin \
     vendor/quanta/fg6q/proprietary/etc/firmware/tegra11x/nvhost_msenc02.fw:system/etc/firmware/tegra11x/nvhost_msenc02.fw \
     vendor/quanta/fg6q/proprietary/etc/firmware/tegra11x/nvhost_tsec.fw:system/etc/firmware/tegra11x/nvhost_tsec.fw \
+    vendor/quanta/fg6q/proprietary/etc/hdcpsrm/hdcp1x.srm:system/etc/hdcpsrm/hdcp1x.srm \
+    vendor/quanta/fg6q/proprietary/etc/hdcpsrm/hdcp2x.srm:system/etc/hdcpsrm/hdcp2x.srm \
+    vendor/quanta/fg6q/proprietary/etc/hdcpsrm/hdcp2xtest.srm:system/etc/hdcpsrm/hdcp2xtest.srm \
+    vendor/quanta/fg6q/proprietary/lib/egl/libEGL_tegra.so:system/lib/egl/libEGL_tegra.so \
+    vendor/quanta/fg6q/proprietary/lib/egl/libEGL_tegra_impl.so:system/lib/egl/libEGL_tegra_impl.so \
+    vendor/quanta/fg6q/proprietary/lib/egl/libGLESv1_CM_tegra.so:system/lib/egl/libGLESv1_CM_tegra.so \
+    vendor/quanta/fg6q/proprietary/lib/egl/libGLESv1_CM_tegra_impl.so:system/lib/egl/libGLESv1_CM_tegra_impl.so \
+    vendor/quanta/fg6q/proprietary/lib/egl/libGLESv2_tegra.so:system/lib/egl/libGLESv2_tegra.so \
+    vendor/quanta/fg6q/proprietary/lib/egl/libGLESv2_tegra_impl.so:system/lib/egl/libGLESv2_tegra_impl.so \
+    vendor/quanta/fg6q/proprietary/lib/hw/audio.primary.tegra.so:system/lib/hw/audio.primary.tegra.so \
+    vendor/quanta/fg6q/proprietary/lib/hw/audio_policy.tegra.so:system/lib/hw/audio_policy.tegra.so \
+    vendor/quanta/fg6q/proprietary/lib/hw/camera.tegra.so:system/lib/hw/camera.tegra.so \
+    vendor/quanta/fg6q/proprietary/lib/hw/gps.tegra.so:system/lib/hw/gps.tegra.so \
+    vendor/quanta/fg6q/proprietary/lib/hw/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
+    vendor/quanta/fg6q/proprietary/lib/hw/hwcomposer.tegra.so:system/lib/hw/hwcomposer.tegra.so \
+    vendor/quanta/fg6q/proprietary/lib/hw/lights.macallan.so:system/lib/hw/lights.macallan.so \
+    vendor/quanta/fg6q/proprietary/lib/hw/nfc.tegra.so:system/lib/hw/nfc.tegra.so \
+    vendor/quanta/fg6q/proprietary/lib/hw/sensors.macallan.so:system/lib/hw/sensors.macallan.so \
+    vendor/quanta/fg6q/proprietary/lib/hw/ts.default.so:system/lib/hw/ts.default.so \
     vendor/quanta/fg6q/proprietary/lib/libardrv_dynamic.so:system/lib/libardrv_dynamic.so \
     vendor/quanta/fg6q/proprietary/lib/libaudioavp.so:system/lib/libaudioavp.so \
     vendor/quanta/fg6q/proprietary/lib/libcgdrv.so:system/lib/libcgdrv.so \
@@ -56,12 +75,12 @@ PRODUCT_COPY_FILES := \
     vendor/quanta/fg6q/proprietary/lib/libnvapputil.so:system/lib/libnvapputil.so \
     vendor/quanta/fg6q/proprietary/lib/libnvaudioservice.so:system/lib/libnvaudioservice.so \
     vendor/quanta/fg6q/proprietary/lib/libnvavp.so:system/lib/libnvavp.so \
-    vendor/quanta/fg6q/proprietary/lib/libnvcamerahdr.so:system/lib/libnvcamerahdr.so \
     vendor/quanta/fg6q/proprietary/lib/libnvcam_imageencoder.so:system/lib/libnvcam_imageencoder.so \
-    vendor/quanta/fg6q/proprietary/lib/libnvcapaudioservice.so:system/lib/libnvcapaudioservice.so \
-    vendor/quanta/fg6q/proprietary/lib/libnvcapclk.so:system/lib/libnvcapclk.so \
+    vendor/quanta/fg6q/proprietary/lib/libnvcamerahdr.so:system/lib/libnvcamerahdr.so \
     vendor/quanta/fg6q/proprietary/lib/libnvcap.so:system/lib/libnvcap.so \
     vendor/quanta/fg6q/proprietary/lib/libnvcap_video.so:system/lib/libnvcap_video.so \
+    vendor/quanta/fg6q/proprietary/lib/libnvcapaudioservice.so:system/lib/libnvcapaudioservice.so \
+    vendor/quanta/fg6q/proprietary/lib/libnvcapclk.so:system/lib/libnvcapclk.so \
     vendor/quanta/fg6q/proprietary/lib/libnvcms.so:system/lib/libnvcms.so \
     vendor/quanta/fg6q/proprietary/lib/libnvcontrol_jni.so:system/lib/libnvcontrol_jni.so \
     vendor/quanta/fg6q/proprietary/lib/libnvcpl.so:system/lib/libnvcpl.so \
@@ -70,39 +89,39 @@ PRODUCT_COPY_FILES := \
     vendor/quanta/fg6q/proprietary/lib/libnvfusebypass.so:system/lib/libnvfusebypass.so \
     vendor/quanta/fg6q/proprietary/lib/libnvglsi.so:system/lib/libnvglsi.so \
     vendor/quanta/fg6q/proprietary/lib/libnvhdmi3dplay_jni.so:system/lib/libnvhdmi3dplay_jni.so \
+    vendor/quanta/fg6q/proprietary/lib/libnvmm.so:system/lib/libnvmm.so \
     vendor/quanta/fg6q/proprietary/lib/libnvmm_audio.so:system/lib/libnvmm_audio.so \
     vendor/quanta/fg6q/proprietary/lib/libnvmm_camera.so:system/lib/libnvmm_camera.so \
     vendor/quanta/fg6q/proprietary/lib/libnvmm_contentpipe.so:system/lib/libnvmm_contentpipe.so \
     vendor/quanta/fg6q/proprietary/lib/libnvmm_image.so:system/lib/libnvmm_image.so \
-    vendor/quanta/fg6q/proprietary/lib/libnvmmlite_audio.so:system/lib/libnvmmlite_audio.so \
-    vendor/quanta/fg6q/proprietary/lib/libnvmmlite_image.so:system/lib/libnvmmlite_image.so \
-    vendor/quanta/fg6q/proprietary/lib/libnvmmlite.so:system/lib/libnvmmlite.so \
-    vendor/quanta/fg6q/proprietary/lib/libnvmmlite_utils.so:system/lib/libnvmmlite_utils.so \
-    vendor/quanta/fg6q/proprietary/lib/libnvmmlite_video.so:system/lib/libnvmmlite_video.so \
     vendor/quanta/fg6q/proprietary/lib/libnvmm_manager.so:system/lib/libnvmm_manager.so \
     vendor/quanta/fg6q/proprietary/lib/libnvmm_parser.so:system/lib/libnvmm_parser.so \
     vendor/quanta/fg6q/proprietary/lib/libnvmm_service.so:system/lib/libnvmm_service.so \
-    vendor/quanta/fg6q/proprietary/lib/libnvmm.so:system/lib/libnvmm.so \
     vendor/quanta/fg6q/proprietary/lib/libnvmm_utils.so:system/lib/libnvmm_utils.so \
     vendor/quanta/fg6q/proprietary/lib/libnvmm_video.so:system/lib/libnvmm_video.so \
     vendor/quanta/fg6q/proprietary/lib/libnvmm_writer.so:system/lib/libnvmm_writer.so \
+    vendor/quanta/fg6q/proprietary/lib/libnvmmlite.so:system/lib/libnvmmlite.so \
+    vendor/quanta/fg6q/proprietary/lib/libnvmmlite_audio.so:system/lib/libnvmmlite_audio.so \
+    vendor/quanta/fg6q/proprietary/lib/libnvmmlite_image.so:system/lib/libnvmmlite_image.so \
+    vendor/quanta/fg6q/proprietary/lib/libnvmmlite_utils.so:system/lib/libnvmmlite_utils.so \
+    vendor/quanta/fg6q/proprietary/lib/libnvmmlite_video.so:system/lib/libnvmmlite_video.so \
     vendor/quanta/fg6q/proprietary/lib/libnvodm_dtvtuner.so:system/lib/libnvodm_dtvtuner.so \
     vendor/quanta/fg6q/proprietary/lib/libnvodm_hdmi.so:system/lib/libnvodm_hdmi.so \
     vendor/quanta/fg6q/proprietary/lib/libnvodm_imager.so:system/lib/libnvodm_imager.so \
     vendor/quanta/fg6q/proprietary/lib/libnvodm_misc.so:system/lib/libnvodm_misc.so \
     vendor/quanta/fg6q/proprietary/lib/libnvodm_query.so:system/lib/libnvodm_query.so \
     vendor/quanta/fg6q/proprietary/lib/libnvoice.so:system/lib/libnvoice.so \
+    vendor/quanta/fg6q/proprietary/lib/libnvomx.so:system/lib/libnvomx.so \
     vendor/quanta/fg6q/proprietary/lib/libnvomxadaptor.so:system/lib/libnvomxadaptor.so \
     vendor/quanta/fg6q/proprietary/lib/libnvomxilclient.so:system/lib/libnvomxilclient.so \
-    vendor/quanta/fg6q/proprietary/lib/libnvomx.so:system/lib/libnvomx.so \
     vendor/quanta/fg6q/proprietary/lib/libnvopt_dvm.so:system/lib/libnvopt_dvm.so \
     vendor/quanta/fg6q/proprietary/lib/libnvos.so:system/lib/libnvos.so \
     vendor/quanta/fg6q/proprietary/lib/libnvparser.so:system/lib/libnvparser.so \
     vendor/quanta/fg6q/proprietary/lib/libnvremoteevtmgr.so:system/lib/libnvremoteevtmgr.so \
     vendor/quanta/fg6q/proprietary/lib/libnvremotell.so:system/lib/libnvremotell.so \
     vendor/quanta/fg6q/proprietary/lib/libnvremoteprotocol.so:system/lib/libnvremoteprotocol.so \
-    vendor/quanta/fg6q/proprietary/lib/libnvrm_graphics.so:system/lib/libnvrm_graphics.so \
     vendor/quanta/fg6q/proprietary/lib/libnvrm.so:system/lib/libnvrm.so \
+    vendor/quanta/fg6q/proprietary/lib/libnvrm_graphics.so:system/lib/libnvrm_graphics.so \
     vendor/quanta/fg6q/proprietary/lib/libnvsm.so:system/lib/libnvsm.so \
     vendor/quanta/fg6q/proprietary/lib/libnvstitching.so:system/lib/libnvstitching.so \
     vendor/quanta/fg6q/proprietary/lib/libnvtestio.so:system/lib/libnvtestio.so \
@@ -113,8 +132,8 @@ PRODUCT_COPY_FILES := \
     vendor/quanta/fg6q/proprietary/lib/libnvwinsys.so:system/lib/libnvwinsys.so \
     vendor/quanta/fg6q/proprietary/lib/libnvwsi.so:system/lib/libnvwsi.so \
     vendor/quanta/fg6q/proprietary/lib/libopencv24_tegra.so:system/lib/libopencv24_tegra.so \
-    vendor/quanta/fg6q/proprietary/lib/libpowerservice_client.so:system/lib/libpowerservice_client.so \
     vendor/quanta/fg6q/proprietary/lib/libpowerservice.so:system/lib/libpowerservice.so \
+    vendor/quanta/fg6q/proprietary/lib/libpowerservice_client.so:system/lib/libpowerservice_client.so \
     vendor/quanta/fg6q/proprietary/lib/librm31080.so:system/lib/librm31080.so \
     vendor/quanta/fg6q/proprietary/lib/libsecure_hdcp_up.so:system/lib/libsecure_hdcp_up.so \
     vendor/quanta/fg6q/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
@@ -124,23 +143,10 @@ PRODUCT_COPY_FILES := \
     vendor/quanta/fg6q/proprietary/lib/libtsec_wrapper.so:system/lib/libtsec_wrapper.so \
     vendor/quanta/fg6q/proprietary/lib/libtsechdcp.so:system/lib/libtsechdcp.so \
     vendor/quanta/fg6q/proprietary/lib/libussrd.so:system/lib/libussrd.so \
-    vendor/quanta/fg6q/proprietary/lib/egl/libEGL_tegra_impl.so:system/lib/egl/libEGL_tegra_impl.so \
-    vendor/quanta/fg6q/proprietary/lib/egl/libEGL_tegra.so:system/lib/egl/libEGL_tegra.so \
-    vendor/quanta/fg6q/proprietary/lib/egl/libGLESv1_CM_tegra_impl.so:system/lib/egl/libGLESv1_CM_tegra_impl.so \
-    vendor/quanta/fg6q/proprietary/lib/egl/libGLESv1_CM_tegra.so:system/lib/egl/libGLESv1_CM_tegra.so \
-    vendor/quanta/fg6q/proprietary/lib/egl/libGLESv2_tegra_impl.so:system/lib/egl/libGLESv2_tegra_impl.so \
-    vendor/quanta/fg6q/proprietary/lib/egl/libGLESv2_tegra.so:system/lib/egl/libGLESv2_tegra.so \
-    vendor/quanta/fg6q/proprietary/lib/hw/audio_policy.tegra.so:system/lib/hw/audio_policy.tegra.so \
-    vendor/quanta/fg6q/proprietary/lib/hw/audio.primary.tegra.so:system/lib/hw/audio.primary.tegra.so \
-    vendor/quanta/fg6q/proprietary/lib/hw/camera.tegra.so:system/lib/hw/camera.tegra.so \
-    vendor/quanta/fg6q/proprietary/lib/hw/gps.tegra.so:system/lib/hw/gps.tegra.so \
-    vendor/quanta/fg6q/proprietary/lib/hw/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
-    vendor/quanta/fg6q/proprietary/lib/hw/hwcomposer.tegra.so:system/lib/hw/hwcomposer.tegra.so \
-    vendor/quanta/fg6q/proprietary/lib/hw/lights.macallan.so:system/lib/hw/lights.macallan.so \
-    vendor/quanta/fg6q/proprietary/lib/hw/nfc.tegra.so:system/lib/hw/nfc.tegra.so \
-    vendor/quanta/fg6q/proprietary/lib/hw/sensors.macallan.so:system/lib/hw/sensors.macallan.so \
-    vendor/quanta/fg6q/proprietary/lib/hw/ts.default.so:system/lib/hw/ts.default.so \
     vendor/quanta/fg6q/proprietary/lib/nvcms/device.cfg:system/lib/nvcms/device.cfg \
+    vendor/quanta/fg6q/proprietary/lib/libwfd_common.so:system/lib/libwfd_common.so \
+    vendor/quanta/fg6q/proprietary/lib/libwfd_sink.so:system/lib/libwfd_sink.so \
+    vendor/quanta/fg6q/proprietary/lib/libwfd_source.so:system/lib/libwfd_source.so \
     vendor/quanta/fg6q/proprietary/usr/share/alsa/alsa.conf:system/usr/share/alsa/alsa.conf \
     vendor/quanta/fg6q/proprietary/usr/share/alsa/cards/aliases.conf:system/usr/share/alsa/cards/aliases.conf \
     vendor/quanta/fg6q/proprietary/usr/share/alsa/pcm/center_lfe.conf:system/usr/share/alsa/pcm/center_lfe.conf \
@@ -158,11 +164,11 @@ PRODUCT_COPY_FILES := \
     vendor/quanta/fg6q/proprietary/usr/share/alsa/pcm/surround50.conf:system/usr/share/alsa/pcm/surround50.conf \
     vendor/quanta/fg6q/proprietary/usr/share/alsa/pcm/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
     vendor/quanta/fg6q/proprietary/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf \
+    vendor/quanta/fg6q/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/quanta/fg6q/proprietary/vendor/lib/hw/power.macallan.so:system/vendor/lib/hw/power.macallan.so \
+    vendor/quanta/fg6q/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/quanta/fg6q/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     vendor/quanta/fg6q/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
     vendor/quanta/fg6q/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/quanta/fg6q/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/quanta/fg6q/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-    vendor/quanta/fg6q/proprietary/vendor/lib/hw/power.macallan.so:system/vendor/lib/hw/power.macallan.so \
-    vendor/quanta/fg6q/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/quanta/fg6q/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
