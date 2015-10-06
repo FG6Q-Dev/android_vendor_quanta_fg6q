@@ -27,7 +27,6 @@ PRODUCT_COPY_FILES := \
     vendor/quanta/fg6q/proprietary/bin/nvcap_test:system/bin/nvcap_test \
     vendor/quanta/fg6q/proprietary/bin/nvcgcserver:system/bin/nvcgcserver \
     vendor/quanta/fg6q/proprietary/bin/nvtest:system/bin/nvtest \
-    vendor/quanta/fg6q/proprietary/bin/powerservice:system/bin/powerservice \
     vendor/quanta/fg6q/proprietary/bin/set_hwui_params.sh:system/bin/set_hwui_params.sh \
     vendor/quanta/fg6q/proprietary/bin/test-wvdrmplugin:system/bin/test-wvdrmplugin \
     vendor/quanta/fg6q/proprietary/bin/tf_daemon:system/bin/tf_daemon \
